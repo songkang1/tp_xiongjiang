@@ -18,7 +18,7 @@ return array(
 //    'ERROR_PAGE' =>'/Theme/default/Public/404.html',
     'LANG_AUTO_DETECT' => true,
     'LANG_SWITCH_ON' => true, // 开启多语言功能
-    'DEFAULT_LANG' => 'en', // 设置默认语言为简体中文
+    'DEFAULT_LANG' => 'zh', // 设置默认语言为简体中文
     'LANG_LIST' => 'zh,en', // 允许切换的语言列表 用逗号分隔
     'VAR_LANGUAGE' => 'l', // 默认语言切换变量
 );

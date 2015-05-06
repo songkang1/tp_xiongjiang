@@ -1,8 +1,7 @@
   
 <?php v_template_part(array("name" => "header", "path" => "Public")); ?>
 <?php v_template_part(array("name" => "Crumb", "path" => "Public",
-    "data" => array(array("name"=>$article[0]['title']) ) ) ); ?>
-<link rel="stylesheet" href="<?php echo v_theme_url() ?>/css/swiper.min.css">
+    "data" => array(array("name"=>$article[0]['title']) ) ) ); ?> 
 <style> 
 .article-title{ text-align: center; border-bottom: 3px #5ba331 solid;}
 .article-option{ text-align: center; line-height: 35px;}
