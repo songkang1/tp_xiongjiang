@@ -39,8 +39,10 @@ class IndexController extends Controller {
 
 
         $this->assign('articlelist', $list); // 赋值数据集
-        $this->assign('categorylist', M('article_category')->where(array("lang" => LANG_SET))->select()); // 赋值数据集
-//print_r($Page->show());die;
+       $categorylist = M('article_category')->where(array("lang" => LANG_SET))->select();
+
+        $tree = build_tree(0, $categorylist);
+        $this->assign('categorylist', $tree); // 赋值数据集
         $this->assign('page', $show); // 赋值分页输出
 
 
@@ -58,7 +60,10 @@ class IndexController extends Controller {
     public function single($id){
         
         
-            $this->assign('categorylist', M('article_category')->where(array("lang"=>LANG_SET))->select()); // 赋值数据集
+           $categorylist = M('article_category')->where(array("lang" => LANG_SET))->select();
+
+        $tree = build_tree(0, $categorylist);
+        $this->assign('categorylist', $tree); // 赋值数据集
             $article = M('article')->where("id='$id'")->select();       
             $article[0]["category"] =  M('article_category')->where(array("id"=>$article[0]['category_id']))->select();
             $this->article = $article; 

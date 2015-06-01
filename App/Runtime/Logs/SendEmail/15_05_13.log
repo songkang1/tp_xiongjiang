@@ -1,0 +1,26 @@
+[ 2015-05-13T15:36:47+08:00 ] 66.249.67.213 /index.php?s=/SendEmail/Index/send.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `v_option` [ RunTime:0.0007s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_HOST' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_USERNAME' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_FROM' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_TO' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_FROMNAME' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'MAIL_PASSWORD' AND `type` = 'email' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'EMAIL' AND `type` = 'other' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `lang` = 'zh' AND `meta_key` = 'MOBILE' AND `type` = 'other' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `meta_key` = 'PHONE' AND `type` = 'other' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `meta_value` FROM `v_option` WHERE `lang` = 'zh' AND `meta_key` = 'ABOUT' AND `type` = 'index' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+NOTIC: [8] Undefined index: body /home/xiongjiang/www/App/SendEmail/Controller/IndexController.class.php 第 11 行.
+NOTIC: [8] Undefined index: email /home/xiongjiang/www/App/SendEmail/Controller/IndexController.class.php 第 12 行.
+NOTIC: [8] Use of undefined constant res - assumed 'res' /home/xiongjiang/www/App/SendEmail/Controller/IndexController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+

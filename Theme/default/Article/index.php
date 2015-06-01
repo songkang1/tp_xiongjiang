@@ -26,7 +26,10 @@
             <div class="col-md-6 col-xs-6"> 
                 <div class="col-md-12 col-xs-12 article-list-item">
                     <div class="col-md-6 col-xs-6"  >
-                        <img src="<?php echo $value['img']?>" width="100%"/>
+                        <img src="<?php
+                                $arr = explode("||", $value['img']);
+                                echo $arr[0]
+                                        ?>" width="100%"/>
                     </div>
                     <div class="col-md-6 col-xs-6">
                         <h4 ><a href="<?php echo U("Article/Index/single/id/".$value['id'])?>"><?php echo mb_substr($value['title'], 0,25,"UTF-8");?></a></h4>

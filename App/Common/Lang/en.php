@@ -14,6 +14,14 @@ return array(
     "L_NEXT_PRODUCT" => "NEXT",
     "L_NEXT_NOTHING" => "NOTHING",
     "L_NOTFOUNT" => "Not Found",
+        "L_LANG_ABOUT" => "About ",
+    "L_LANG_WE" => "Us",
+    "L_LANG_QIYEJIESHAO" => "Introduction",
+    "L_LANG_JINGYINGLINIAN" => "Philosophy",
+    "L_LANG_ZIZHIZHENGMING" => "Testimonials",
+    "L_LANG_XINWEN" => "News ",
+    "L_LANG_MOVIE" => "Movie ",
+    "L_LANG_CENTER" => "Center",
     /* 导航开始 */
     'L_NAV_HOME' => 'Home',
     'L_NAV_PRODUCT' => 'Product',
@@ -40,11 +48,11 @@ return array(
     'L_FOOTER_CONTACT' => "Contact",
     'L_FOOTER_LEGAL' => "Legal Description",
     'L_FOOTER_COPYRIGHT' => "Copyright Shenzhen XIONGJIANG Technology Co., Ltd. All rights reserved.",
-    'L_FOOTER_BEIAN' => "粤ICP备 1502762 号",
+    'L_FOOTER_BEIAN' => "粤ICP备1503957",
     /* 底部结束 */
 
     /* 首页开始 */
-    'L_INDEX_WE_PRODUCT' => "Our PRODUCTS",
+    'L_INDEX_WE_PRODUCT' => "Our Products",
     'L_INDEX_NEW_NEWS' => 'New News', //最新新闻
     'L_INDEX_XINPINTUIJIAN' => "New Products", //新品推荐
     'L_INDEX_MOVIECENTER' => "Movie Center", //视频中心
@@ -64,4 +72,5 @@ return array(
     'L_SIDER_ENTERINFO' => "Please enter complete information",
     /* ｓｉｄｅｒｂａｒ  结束 */
     "L_CURRLOCALTION" => "You are  here",
+    "L_FOOTER_OTHER"=>""
 );

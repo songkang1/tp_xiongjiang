@@ -5,7 +5,7 @@
         array("name"=>$article[0]['title']) ) ) ); ?>
 <link rel="stylesheet" href="<?php echo v_theme_url() ?>/css/swiper.min.css">
 <style> 
-.article-title{ text-align: center; border-bottom: 3px #5ba331 solid;}
+.article-title{ text-align: center; border-bottom: 3px #006ea3 solid;}
 .article-option{ text-align: center; line-height: 35px;}
 .article-body{}
 

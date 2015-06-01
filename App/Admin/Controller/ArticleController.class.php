@@ -108,12 +108,14 @@ class ArticleController extends Controller {
                 $page['id'] = I('param.articleid');
                 $page['category_id'] = I("param.categoryid");
                 $page['title'] = I('param.title');
-                $page['img'] = I('param.img');
+               
                 $page['summary'] = I('param.summary');
                 $page['tag'] = I('param.tag');
                 $page['body'] = I('param.body');
                 $page['created'] = time();
                 $page['lang'] = LANG_SET ;
+ 					 $page['img'] = I('param.img');
+ 	             $page['img'] = substr($page['img'], 0, strlen($page['img']) - 2);
 
 //                $page['type'] = I('param.type');
 

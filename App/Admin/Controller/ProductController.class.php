@@ -95,6 +95,9 @@ class ProductController extends Controller {
                 $page['category_id'] = I("param.categoryid");
                 $page['title'] = I('param.title');
                 $page['summary'] = I('param.summary');
+                $page['movie'] = I('param.movie');
+                $page['param'] = I('param.param');
+                $page['catlist'] = I('param.catlist');
                 $page['img'] = I('param.img');
                 $page['img'] = substr($page['img'], 0, strlen($page['img']) - 2);
 

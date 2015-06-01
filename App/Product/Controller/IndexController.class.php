@@ -32,7 +32,7 @@ class IndexController extends Controller {
         }
         $this->assign('currcategory', $temo[0]); // 赋值数据集
         }else{
-             $this->assign('currcategory',array("img"=>  v_theme_url()."/img/logo.png","name"=>"所有产品","summary"=>"深圳市英速尔科技有限公司。")); // 赋值数据集
+             $this->assign('currcategory',array("img"=>  v_theme_url()."/img/logo.png","name"=>"","summary"=>"")); // 赋值数据集
         }
         /**
          * seache

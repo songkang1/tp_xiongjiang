@@ -16,11 +16,11 @@
 <!--        <div class="col-md-12"> 
             <img src="http://www.uniview.com/res/201504/01/20150401_1608007_fenxiao_731950_140445_0.jpg" width="100%"/>
         </div>-->
-        <div class="col-md-12">
+        <div class="col-xs-12">
             
                 <?php v_template_part(array("name" => "ProductSiderbar","title"=>L("L_PRODUCT_CATEGORY"), "path" => "Public")); ?>
             
-            <div class="col-md-10 col-xs-10 product-list">
+            <div class="col-xs-10 col-xs-10 product-list">
 <!--                <div class="col-md-12" style=" border-bottom: 1px #5AB331 solid; padding: 0px; height: 130px; ">
                     <div class="col-md-2" style="padding:5px;">
                         <img src="<?php echo $currcategory['img'] ?>"  height="110px;">
@@ -43,7 +43,7 @@
                             <figure class="effect-apollo"  style="border:0px #cdcdcd solid">
 
                                 <img src="<?php
-                                $arr = explode(",", $value['img']);
+                                $arr = explode("||", $value['img']);
                                 echo $arr[0]
                                         ?>"  width="170" height="170" style="border:0px;">
                                 <figcaption>

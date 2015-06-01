@@ -32,8 +32,8 @@ class PageController extends Controller {
 
             $orderby['id'] = 'desc';
 
-            $list = $M->order($orderby)->limit($Page->firstRow . ',' . $Page->listRows)->where($map)->select();
-
+            //$list = $M->order($orderby)->limit($Page->firstRow . ',' . $Page->listRows)->where($map)->select();
+	    $list = $M->order($orderby)->where($map)->select();
 
 
             $this->assign('staticpage', $list); // 赋值数据集
@@ -58,7 +58,7 @@ class PageController extends Controller {
                 $this->error('参数错误');
             }
 
-
+            $this->pages = M("page")->where(array("lang" => LANG_SET,"top"=>"top"))->select();
             $this->staticpage = M('page')->where("id='$id'")->select();
             $this->theme("default")->display('Admin/Page/edit');
         }
@@ -73,11 +73,14 @@ class PageController extends Controller {
         } else {
             if (IS_POST) {
                 $page['id'] = I('param.pageid');
+                  $page['sub_id'] = I('param.sub_id');
                 $page['title'] = I('param.title');
                 $page['summary'] = I('param.summary');
                 $page['body'] = I('param.body');
                 $page['callcode'] = I('param.callcode');
-
+		if($page['sub_id'] == "0"){
+		   $page['top'] = "top";
+		}
 
 
                 $page['created'] = time();
